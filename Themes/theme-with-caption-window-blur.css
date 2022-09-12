@@ -521,6 +521,10 @@ a.ytp-next-button.ytp-button {
 	top: calc(100% - 120px) !important;
 }
 
+.ytp-settings-menu {
+	bottom: 95px !important;
+}
+
 /*player bottom*/
 .ytp-gradient-bottom {
 	display: none !important;
@@ -1084,7 +1088,7 @@ yt-live-chat-header-renderer.style-scope.yt-live-chat-renderer {
 	backdrop-filter: blur(25px) !important;
 	-webkit-backdrop-filter: blur(25px) !important;
 	border-radius: 10px !important;
-	background: rgba(50, 50, 50, 0.30) !important;
+	background: rgba(50, 50, 50, 0.50) !important;
 }
 
 /*searchbar predictions backdrop filter*/
@@ -1092,7 +1096,7 @@ yt-live-chat-header-renderer.style-scope.yt-live-chat-renderer {
 .sbsb_a {
 	margin-top: 5px !important;
 	border: 0 !important;
-	background: rgba(50, 50, 50, 0.3) !important;
+	background: rgba(50, 50, 50, 0.50) !important;
 	border-radius: 10px !important;
 	backdrop-filter: blur(25px) !important;
 	-webkit-backdrop-filter: blur(25px) !important;
