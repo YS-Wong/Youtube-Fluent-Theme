@@ -517,11 +517,13 @@ a.ytp-next-button.ytp-button {
 	background: rgba(50, 50, 50, 0.50);
 }
 
+/*tooltip containers of player controls*/
 .ytp-bottom,
 .ytp-efyt-tooltip {
 	top: calc(100% - 120px) !important;
 }
 
+/*preview screen near progress bar*/
 .ytp-preview {
 	padding: 1px !important;
 	background-color: rgba(50, 50, 50, 0.50) !important;
@@ -532,6 +534,7 @@ a.ytp-next-button.ytp-button {
 	bottom: 32px !important;
 }
 
+/*settings menu of player*/
 .ytp-settings-menu {
 	bottom: 95px !important;
 }
@@ -544,8 +547,6 @@ a.ytp-next-button.ytp-button {
 .ytp-chrome-bottom {
 	bottom: 25px !important;
 	padding-bottom: 15px !important;
-	/*width: 60% !important;
-	left: 20% !important;*/
 	border-radius: 10px !important;
 	backdrop-filter: blur(25px) !important;
 	-webkit-backdrop-filter: blur(25px) !important;
