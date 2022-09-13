@@ -520,14 +520,16 @@ a.ytp-next-button.ytp-button {
 /*tooltip containers of player controls*/
 .ytp-bottom,
 .ytp-efyt-tooltip {
-	top: calc(100% - 120px) !important;
+	top: auto !important;
+	bottom: 14% !important;
 }
 
 /*preview screen near progress bar*/
 .ytp-preview {
+	top: auto !important;
+	bottom: 14% !important;
 	padding: 1px !important;
 	background-color: rgba(50, 50, 50, 0.50) !important;
-	top: calc(100% - 187px) !important;
 }
 
 .ytp-tooltip-text-wrapper {
@@ -536,7 +538,8 @@ a.ytp-next-button.ytp-button {
 
 /*settings menu of player*/
 .ytp-settings-menu {
-	bottom: 95px !important;
+	top: auto !important;
+	bottom: 14% !important;
 }
 
 /*player bottom*/
@@ -545,6 +548,7 @@ a.ytp-next-button.ytp-button {
 }
 
 .ytp-chrome-bottom {
+	top: auto !important;
 	bottom: 25px !important;
 	padding-bottom: 15px !important;
 	border-radius: 10px !important;
@@ -555,8 +559,6 @@ a.ytp-next-button.ytp-button {
 
 .ytp-progress-bar-container {
 	bottom: 12px !important;
-	/*margin-inline: 5% !important;
-	width: 90% !important;*/
 }
 
 /*(channel) community video box border radius*/
