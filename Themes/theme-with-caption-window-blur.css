@@ -517,8 +517,19 @@ a.ytp-next-button.ytp-button {
 	background: rgba(50, 50, 50, 0.50);
 }
 
-.ytp-tooltip.ytp-bottom {
+.ytp-bottom,
+.ytp-efyt-tooltip {
 	top: calc(100% - 120px) !important;
+}
+
+.ytp-preview {
+	padding: 1px !important;
+	background-color: rgba(50, 50, 50, 0.50) !important;
+	top: calc(100% - 187px) !important;
+}
+
+.ytp-tooltip-text-wrapper {
+	bottom: 32px !important;
 }
 
 .ytp-settings-menu {
