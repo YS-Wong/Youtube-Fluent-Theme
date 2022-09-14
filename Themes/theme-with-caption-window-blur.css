@@ -522,25 +522,25 @@ a.ytp-next-button.ytp-button {
 .ytp-bottom,
 .ytp-efyt-tooltip {
 	top: auto !important;
-	bottom: 14% !important;
+	bottom: 15% !important;
 }
 
 /*preview screen near progress bar*/
 .ytp-preview {
 	top: auto !important;
-	bottom: 14% !important;
+	bottom: 15% !important;
 	padding: 1px !important;
 	background-color: rgba(50, 50, 50, 0.50) !important;
 }
 
 .ytp-tooltip-text-wrapper {
-	bottom: 32px !important;
+	bottom: 0px !important;
 }
 
 /*settings menu of player*/
 .ytp-settings-menu {
 	top: auto !important;
-	bottom: 14% !important;
+	bottom: 15% !important;
 }
 
 /*player bottom*/
