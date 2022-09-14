@@ -537,6 +537,10 @@ a.ytp-next-button.ytp-button {
 	bottom: 0px !important;
 }
 
+.ytp-fullerscreen-edu-chevron {
+	transform: translateY(-5px);
+  }
+
 /*settings menu of player*/
 .ytp-settings-menu {
 	top: auto !important;
