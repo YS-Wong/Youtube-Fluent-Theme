@@ -35,8 +35,9 @@ span.ytp-tooltip-text {
 }
 
 /*Sponsor block icon*/
-#infoImage {
-	height: 45%;
+#infoImage,
+#sbSkipIconControlBarImage {
+	height: 45% !important;
 }
 
 /*Dark search text 
