@@ -539,7 +539,7 @@ a.ytp-next-button.ytp-button {
 
 .ytp-fullerscreen-edu-chevron {
 	transform: translateY(-5px);
-  }
+}
 
 /*settings menu of player*/
 .ytp-settings-menu {
@@ -552,6 +552,7 @@ a.ytp-next-button.ytp-button {
 	display: none !important;
 }
 
+/*player control container*/
 .ytp-chrome-bottom {
 	top: auto !important;
 	bottom: 25px !important;
@@ -564,6 +565,14 @@ a.ytp-next-button.ytp-button {
 
 .ytp-progress-bar-container {
 	bottom: 12px !important;
+}
+
+/*SponsorBlock container*/
+.sponsorSkipNoticeTableContainer {
+	border-radius: 10px !important;
+	backdrop-filter: blur(25px) !important;
+	-webkit-backdrop-filter: blur(25px) !important;
+	background: rgba(50, 50, 50, 0.50) !important;
 }
 
 /*(channel) community video box border radius*/
@@ -927,11 +936,6 @@ yt-live-chat-renderer {
 	margin-top: 0px !important;
 }
 
-/*endscreen border top (text / sub button)*/
-.ytp-ce-channel-this .ytp-ce-channel-metadata {
-	border-top: 1px solid #dc4a4a00;
-}
-
 /*endscreen channel info sub button (unsubscribed) border radius*/
 .ytp-sb-subscribe,
 a.ytp-sb-subscribe {
@@ -940,8 +944,8 @@ a.ytp-sb-subscribe {
 
 /*endscreen channel info sub button (subscribed) color / border radius / padding*/
 .ytp-sb-unsubscribe {
-	background-color: #545454;
-	color: rgba(171, 171, 171, 0.6);
+	background-color: #545454 !important;
+	color: rgba(171, 171, 171, 0.6) !important;
 	border-radius: 8px !important;
 	padding: 10px 22px !important;
 }
@@ -953,7 +957,9 @@ a.ytp-ce-channel-title.ytp-ce-link {
 
 /*endscreen channel info text color*/
 .ytp-ce-channel-metadata {
-	color: #ffffff;
+	border: none !important;
+	color: #ffffff !important;
+	background-color: transparent !important;
 }
 
 /*endscreen channel / website info card color / border radius / backdrop filter*/
@@ -1509,7 +1515,6 @@ ytd-miniplayer.style-scope.ytd-app {
 ytd-miniplayer,
 .video.ytd-miniplayer,
 #card.ytd-miniplayer {
-
 	backdrop-filter: blur(25px) !important;
 	-webkit-backdrop-filter: blur(25px) !important;
 	border-radius: 13px !important;
@@ -1569,10 +1574,19 @@ tp-yt-paper-dialog {
 	background-color: transparent !important;
 }
 
-tp-yt-paper-listbox {
+/*Channel notification dropdown menu*/
+tp-yt-paper-listbox,
+.ysc-collections-list {
 	border-radius: 10px !important;
 	backdrop-filter: blur(25px) !important;
-	background: none !important;
+	-webkit-backdrop-filter: blur(25px) !important;
+	background: rgba(50, 50, 50, 0.50) !important;
+}
+
+ytd-menu-popup-renderer,
+.ysc-collections-list {
+	box-shadow: none !important;
+	border: none !important;
 }
 
 tp-yt-iron-overlay-backdrop.opened {
