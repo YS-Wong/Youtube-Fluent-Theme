@@ -13,12 +13,26 @@ ytd-mini-guide-renderer.ytd-app {
 }
 
 /*To Here*/
+
+/*Age Restriction Bypass Badge*/
+tp-yt-paper-toast {
+	background: rgba(50, 50, 50, 0.50) !important;
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	border-radius: 10px !important;
+	z-index: 100;
+}
+
 /* SIDEBAR CONFIG */
 #contentContainer.tp-yt-app-drawer[opened] {
 	background: #18181818 !important;
 	/*CHANGE THIS TO APPLY COLOR TO SIDEBAR*/
 	backdrop-filter: blur(25px) !important;
 	border-radius: 10px !important;
+}
+
+.ytp-efyt-button svg {
+	max-height: 30px !important;
 }
 
 /*Caption Window BG and Blur*/
