@@ -8,7 +8,8 @@ ytd-page-manager.ytd-app {
 	margin-left: 0px !important;
 }
 
-ytd-mini-guide-renderer.ytd-app {
+ytd-mini-guide-renderer.ytd-app,
+ytd-mini-guide-renderer.ytd-app * {
 	width: 0px !important;
 }
 
