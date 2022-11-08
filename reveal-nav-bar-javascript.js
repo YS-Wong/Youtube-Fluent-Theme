@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 console.log("script loaded");
 
 document.getElementById("guide").style.display = "none";
@@ -33,3 +34,5 @@ document.addEventListener('readystatechange', event => {
       break;
   }
 });
+=======
+>>>>>>> Stashed changes
