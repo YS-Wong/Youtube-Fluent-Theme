@@ -1,3 +1,5 @@
+console.log("script loaded");
+
 document.getElementById("guide").style.display = "none";
 
 document.getElementById("guide-button").addEventListener("click", () => {
