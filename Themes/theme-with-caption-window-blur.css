@@ -1,29 +1,20 @@
 /*TO TURN OFF AUTO HIDE SIDEBAR REMOVE THE BELOW CODE AND TURN OFF THE JAVASCRIPT CODE*/
-/*From Here*/
-tp-yt-app-drawer.ytd-app[persistent] {
-	display: none;
-}
-
-ytd-page-manager.ytd-app {
-	margin-left: 0px !important;
-}
-
-ytd-mini-guide-renderer.ytd-app,
-ytd-mini-guide-renderer.ytd-app * {
-	width: 0px !important;
-}
-
-/*To Here*/
-
-/*Age Restriction Bypass Badge*/
-tp-yt-paper-toast {
-	background: rgba(50, 50, 50, 0.50) !important;
-	backdrop-filter: blur(25px);
-	-webkit-backdrop-filter: blur(25px);
-	border-radius: 10px !important;
-	z-index: 100;
-}
-
+    /*From Here*/
+    tp-yt-app-drawer.ytd-app[persistent] {
+      	display:none;
+    }
+    ytd-page-manager.ytd-app {
+     	margin-left: 0px !important;
+    }
+    ytd-mini-guide-renderer.ytd-app {
+      	width: 0px !important;
+    }
+    /*To Here*/
+/*To get back the Download button remove from here*/
+	ytd-button-renderer.style-scope.ytd-download-button-renderer{
+		display:none!important;
+	}
+    /*to here*/
 /* SIDEBAR CONFIG */
 #contentContainer.tp-yt-app-drawer[opened] {
 	background: #18181818 !important;
@@ -479,7 +470,6 @@ ytd-inline-survey-renderer[expanded] #dismissable.ytd-inline-survey-renderer {
 #container.ytd-masthead {
 	border-radius: 0px !important;
 }
-
 /*merchandise border bottom fix*/
 ytd-video-secondary-info-renderer {
 	border-bottom: none !important;
