@@ -5,10 +5,37 @@ tp-yt-app-drawer.ytd-app[persistent] {
 }
 
 ytd-page-manager.ytd-app {
-	margin-left: 0px !important;
+	margin-left: 0 !important;
 }
 
 ytd-mini-guide-renderer.ytd-app,
 ytd-mini-guide-renderer.ytd-app * {
-	width: 0px !important;
+	width: 0 !important;
+}
+
+ytd-playlist-sidebar-renderer.ytd-browse,
+ytd-playlist-header-renderer.ytd-browse {
+	left: 0 !important;
+}
+
+/*Add-on (extension) related*/
+
+/*Age Restriction Bypass Badge*/
+tp-yt-paper-toast {
+	background: rgba(50, 50, 50, 0.50) !important;
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	border-radius: 10px !important;
+	z-index: 100;
+}
+
+/*SponsorBlock icons*/
+#infoImage,
+#sbSkipIconControlBarImage {
+	height: 45% !important;
+}
+
+/*YouTube Enhancer buttons in player control section*/
+.ytp-efyt-button svg {
+	max-height: 30px !important;
 }

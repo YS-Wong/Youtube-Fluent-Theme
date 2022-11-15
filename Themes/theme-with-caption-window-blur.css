@@ -6,11 +6,17 @@ tp-yt-app-drawer.ytd-app[persistent] {
 }
 
 ytd-page-manager.ytd-app {
-	margin-left: 0px !important;
+	margin-left: 0 !important;
 }
 
-ytd-mini-guide-renderer.ytd-app {
-	width: 0px !important;
+ytd-mini-guide-renderer.ytd-app,
+ytd-mini-guide-renderer.ytd-app * {
+	width: 0 !important;
+}
+
+ytd-playlist-sidebar-renderer.ytd-browse,
+ytd-playlist-header-renderer.ytd-browse {
+	left: 0 !important;
 }
 
 /*To Here*/
@@ -22,6 +28,8 @@ ytd-button-renderer.style-scope.ytd-download-button-renderer {
 
 /*to here*/
 
+/*Add-on (extension) related*/
+
 /*Age Restriction Bypass Badge*/
 tp-yt-paper-toast {
 	background: rgba(50, 50, 50, 0.50) !important;
@@ -31,16 +39,23 @@ tp-yt-paper-toast {
 	z-index: 100;
 }
 
+/*SponsorBlock icons*/
+#infoImage,
+#sbSkipIconControlBarImage {
+	height: 45% !important;
+}
+
+/*YouTube Enhancer buttons in player control section*/
+.ytp-efyt-button svg {
+	max-height: 30px !important;
+}
+
 /* SIDEBAR CONFIG */
 #contentContainer.tp-yt-app-drawer[opened] {
 	background: #18181818 !important;
 	/*CHANGE THIS TO APPLY COLOR TO SIDEBAR*/
 	backdrop-filter: blur(25px) !important;
 	border-radius: 10px !important;
-}
-
-.ytp-efyt-button svg {
-	max-height: 30px !important;
 }
 
 /*Caption Window BG and Blur*/
@@ -54,12 +69,6 @@ span.ytp-caption-segment,
 
 span.ytp-tooltip-text {
 	background-color: transparent;
-}
-
-/*Sponsor block icon*/
-#infoImage,
-#sbSkipIconControlBarImage {
-	height: 45% !important;
 }
 
 /*Dark search text 
