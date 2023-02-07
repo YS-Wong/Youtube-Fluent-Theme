@@ -77,6 +77,11 @@ tp-yt-paper-toast {
 	align-items: center !important;
 }
 
+#efyt-controls-button[hidden],
+.ytp-efyt-button[hidden] {
+	display: none !important;
+}
+
 #efyt-controls-button svg,
 .ytp-efyt-button svg {
 	max-height: 40px !important;
