@@ -1,7 +1,14 @@
-document.getElementById('guide').style.display = 'none';
+let guide = document.querySelector('#guide');
+let container = document.querySelector('#contentContainer');
+let button = document.querySelector('#guide-button');
 
-document.getElementById('guide-button').addEventListener('click', () => {
-  document.getElementById('guide').style.display = 'block';
+guide.removeAttribute("guide-persistent-and-visible");
+guide.removeAttribute("opened");
+guide.setAttribute("mini-guide-visible", "");
+container.removeAttribute("opened");
+
+button.addEventListener("click", () => {
+  guide.setAttribute("reveal-nav-bar", "");
 });
 
 document.addEventListener('afterscriptexecute', () => {
