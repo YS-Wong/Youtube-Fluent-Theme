@@ -88,7 +88,9 @@ tp-yt-paper-toast {
 }
 
 /* Others */
-div.ytp-caption-segment {
+
+span.ytp-caption-segment {
     font-family: serif !important;
     background: none !important;
+    text-shadow: 0 0 2px black;
 }
