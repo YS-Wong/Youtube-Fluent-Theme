@@ -1,6 +1,6 @@
-let guide = document.querySelector('#guide');
-let container = document.querySelector('#contentContainer');
-let button = document.querySelector('#guide-button');
+let guide = document.querySelector("#guide");
+let container = document.querySelector("#contentContainer");
+let button = document.querySelector("#guide-button");
 
 //Hides nav bar when loaded
 
@@ -11,14 +11,18 @@ container.removeAttribute("opened");
 
 //Allow transitions to play
 
-button.addEventListener("click", () => guide.setAttribute("reveal-nav-bar", ""));
+button.addEventListener("click", () =>
+    guide.setAttribute("reveal-nav-bar", "")
+);
 
 //Re-arrange thumbnails
 
-document.addEventListener('afterscriptexecute', () => window.dispatchEvent(new Event('resize')));
+document.addEventListener("afterscriptexecute", () =>
+    window.dispatchEvent(new Event("resize"))
+);
 
 //When URL changes, hide nav bar
 
-new MutationObserver(mutations => {
+new MutationObserver((mutations) => {
     if (container.hasAttribute("opened")) button.click();
-}).observe(document.querySelector('title'), { childList: true });
+}).observe(document.querySelector("title"), { childList: true });
