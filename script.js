@@ -11,18 +11,14 @@ container.removeAttribute("opened");
 
 //Allow transitions to play
 
-button.addEventListener("click", () =>
-    guide.setAttribute("reveal-nav-bar", "")
-);
+button.addEventListener("click", () => guide.setAttribute("reveal-nav-bar", ""));
 
 //Re-arrange thumbnails
 
-document.addEventListener("afterscriptexecute", () =>
-    window.dispatchEvent(new Event("resize"))
-);
+document.addEventListener("afterscriptexecute", () => window.dispatchEvent(new Event("resize")));
 
 //When URL changes, hide nav bar
 
 new MutationObserver((mutations) => {
-    if (container.hasAttribute("opened")) button.click();
+	if (container.hasAttribute("opened")) button.click();
 }).observe(document.querySelector("title"), { childList: true });

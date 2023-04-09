@@ -1,97 +1,115 @@
 /* This CSS only hides the navbar */
 
 ytd-page-manager.ytd-app {
-    margin-left: 0 !important;
+	margin-left: 0 !important;
 }
 
 ytd-mini-guide-renderer.ytd-app,
 ytd-mini-guide-renderer.ytd-app * {
-    width: 0 !important;
+	width: 0 !important;
 }
 
 ytd-playlist-sidebar-renderer.ytd-browse,
 ytd-playlist-header-renderer.ytd-browse {
-    left: 0 !important;
+	left: 0 !important;
 }
 
 tp-yt-app-drawer#guide {
-    width: auto !important;
-    right: 0 !important;
-    transition-property: visibility !important;
-    transition-duration: 200ms !important;
+	width: auto !important;
+	right: 0 !important;
+	transition-property: visibility !important;
+	transition-duration: 200ms !important;
 }
 
 #contentContainer.tp-yt-app-drawer {
-    width: var(--app-drawer-width, 256px) !important;
-    transform: translateX(-100%) !important;
-    transition: transform 200ms cubic-bezier(0, 0.8, 0.2, 1) !important;
+	width: var(--app-drawer-width, 256px) !important;
+	transform: translateX(-100%) !important;
+	transition: transform 200ms cubic-bezier(0, 0.8, 0.2, 1) !important;
 }
 
 *[reveal-nav-bar] #contentContainer.tp-yt-app-drawer[opened] {
-    transform: translateX(0) !important;
+	transform: translateX(0) !important;
 }
 
 div#scrim,
 #scrim.tp-yt-app-drawer {
-    transition-property: opacity, backdrop-filter !important;
-    transition-duration: 200ms !important;
-    transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1) !important;
-    backdrop-filter: blur(5px) !important;
+	transition-property: opacity, backdrop-filter !important;
+	transition-duration: 200ms !important;
+	transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1) !important;
+	backdrop-filter: blur(5px) !important;
 }
 
 tp-yt-app-drawer#guide[opened][reveal-nav-bar] #scrim.tp-yt-app-drawer {
-    opacity: 1 !important;
+	opacity: 1 !important;
 }
 
 #guide-button.ytd-app:hover {
-    background-color: var(--yt-spec-10-percent-layer) !important;
-    border-radius: 24px !important;
+	background-color: var(--yt-spec-10-percent-layer) !important;
+	border-radius: 24px !important;
 }
 
 /* Add-on (extension) related */
 
 /* Age Restriction Bypass Badge */
+
 tp-yt-paper-toast {
-    background: rgba(50, 50, 50, 0.5) !important;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 10px !important;
-    z-index: 100;
+	background: rgba(50, 50, 50, 0.5) !important;
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	border-radius: 10px !important;
+	z-index: 100;
 }
 
 /* SponsorBlock icons */
+
 #infoImage,
 #sbSkipIconControlBarImage {
-    height: 45% !important;
+	height: 45% !important;
 }
 
 /* YouTube Enhancer buttons in player control section */
-#ytp-efyt-controls {
-    transition: max-width 0.5s cubic-bezier(0, 0.8, 0.2, 1) !important;
+
+.ytp-right-controls #ytp-efyt-controls {
+	transition: max-width 0.5s cubic-bezier(0, 0.8, 0.2, 1) !important;
+}
+
+.ytp-right-controls #ytp-efyt-controls {
+	mask-image: linear-gradient(to right, transparent 0px, black 10px) !important;
+	padding-left: 10px !important;
+}
+
+.ytp-right-controls #ytp-efyt-controls > :not(#efyt-controls-button) {
+	opacity: 0 !important;
+	transition: opacity 0.4s cubic-bezier(0, 0.8, 0.2, 1) !important;
+}
+
+.ytp-right-controls #ytp-efyt-controls:hover > :not(#efyt-controls-button),
+.ytp-right-controls #ytp-efyt-controls.visible > :not(#efyt-controls-button) {
+	opacity: 1 !important;
 }
 
 #efyt-controls-button,
 .ytp-efyt-button {
-    display: grid !important;
-    justify-content: center !important;
-    align-items: center !important;
+	display: grid !important;
+	justify-content: center !important;
+	align-items: center !important;
 }
 
 #efyt-controls-button[hidden],
 .ytp-efyt-button[hidden] {
-    display: none !important;
+	display: none !important;
 }
 
 #efyt-controls-button svg,
 .ytp-efyt-button svg {
-    max-height: 40px !important;
+	max-height: 40px !important;
 }
 
 /* Others */
 
 span.ytp-caption-segment {
-    font-family: serif !important;
-    font-size: 2rem !important;
-    background: none !important;
-    text-shadow: 0 0 2px black;
+	font-family: serif !important;
+	font-size: 2rem !important;
+	background: none !important;
+	text-shadow: 0 0 2px black;
 }
