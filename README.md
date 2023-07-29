@@ -1,3 +1,9 @@
+## Branches
+
+1. <code>personal-use</code>: only hides sidebar & fixes for some add-ons’ UI
+2. <code>main</code>: synced with the original repository
+</br>
+
 # Youtube Css for Fluent Theme.
 
 ### **RECCOMENDED TO USE THE THEME WITH CAPTION WINDOW BLUR. NOT RECCOMENDED TO USE THE VERSION WITHOUT IT AS IT BLURS THE BACKGROUND OF EACH WORD, MAKING IT HIGHLY GPU INTENSIVE. IT KEEPS FLICKERING IF THE CAPTION HAS MULTIPLE EFFECTS.**
